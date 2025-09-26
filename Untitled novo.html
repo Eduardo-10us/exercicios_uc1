@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> /*
+    let n1 = parseInt(prompt("informe o número"));
+       let n2 = parseInt(prompt("informe outro número"));
+        let soma = n1 + n2;
+      alert("A soma é :" + soma);
+        */
+      function somar(){
+      let n1 = parseInt (document.getElementById("n1").value);
+      let n2 = parseInt (document.getElementById("n2").value);
+      let soma = n1 + n2;
+      alert("A soma é " + soma);
+
+
+
+      
+      }
+    </script>
+</head>
+<body>
+    <form>
+         <input type="number" name="n1" id="n1" />
+        <input type="number" name="n2" id="n2" />
+        <input type="button" value="soma"
+        onclick="somar()" />
+        
+
+        
+    </form>
+    
+</body>
+</html>

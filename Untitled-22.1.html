@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        let quantTotal=0; // total geral
+        let quantMaior18=0; // quantidade das maiores de 18 anos
+        let soma=0; // soma de todas as idades
+        let media=0;
+        while(true) {
+            let idade = parseInt(prompt("informe a idade"));
+            quantTotal= quantTotal+1;
+            soma=soma+idade;
+            media=soma+quantTotal;
+            if(idade>18){
+            quantTotal18=quantMaior18+1;
+            }
+           let r= prompt ("deseja continuar? (s/n)");
+           if(r.substring(0,1). tolowerCase() == 'n' ){
+            break;
+           }
+
+        }
+        alert("Quantidade de prssoas informadas:"+ quantTotal+
+        +"quantidade de pessoas maiores de 18 anos:" 
+        +quantMaior18+"\nA média das idades :" + media);
+    </script>
+</body>
+</html>
