@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let alunos=[];
+        function gravar(){
+            let nome = document.getElementById("nome").value;
+            let nota1= parseFloat(document.getElementById("nota1").value);
+            let not2= parseFloat(document.getElementById("nota2").value);
+            let media= parseFloat(document.getElementById("media").value);
+
+            alunos.push([ nome, nota1, nota2,media,situacao]);
+            let result= document.getElementById("resultado");
+            result.innerHTML= saida();
+
+            document.getElementById("nome").value= "";
+            document.getElementById("nota1").value= "";
+            document.getElementById("nota2").value= "";
+            document.getElementById("media").value= "";
+        }
+        function saida (){
+            let retorno ="";
+            for (let x=0; x < nome.length; x = x + 1 ){
+                for (let y=0; y < nome [x].length; y = y + 1 ){
+                    retorno += nome [x][y] + "     "; 
+                }
+                retorno+="</br>";
+            }
+            return retorno;
+        }  
+                let media= (nota1 + nota2) /2 ;
+                let situcao= media >=7 ?
+                "aprovado" : "reprovado";
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <form> <input type = "text" id= "nome"
+        placeholder="nome do aluno" />
+        <input type='number' id= 'nota1'
+        placeholder="nota1" />
+        <input type ='number' id = 'nota2'
+        placeholder="nota2" />
+        <input type = "text" id= "media"
+        placeholder="media" />
+        <input type= 'button' value="gravar"
+        onclick="gravar()" />
+
+        <div id = 'resultado' ><div>
+    </form>
+</body>
+</html>
